@@ -49,7 +49,7 @@ app.whenReady().then(() => {
 
   ipcMain.handle("fs:readTextFile", (_, path) => readTextFile(path));
   ipcMain.handle(
-    "fs:readTextFile",
+    "fs:writeTextFile",
     (_, path, content) => writeTextFile(path, content),
   );
   ipcMain.handle(
